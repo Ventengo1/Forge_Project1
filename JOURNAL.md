@@ -5,7 +5,7 @@ description: "A smart countertop station that uses an integrated camera and weig
 created_at: "2026-06-07"
 ---
 
-# June 7th: Create Project and Spend Time Reasearching Parts and Designing the overall system 
+# June 7th: Create Project on Forge and Spend Time Reasearching Parts and the overall system 
 
 Spent first 30 min reasearching parts needed and creating a simple list.
 Looks like I'm gonna need:
