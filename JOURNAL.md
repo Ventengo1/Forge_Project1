@@ -67,6 +67,6 @@ Gotta go now and add the links to some.
 
 Just added links to them, so now it should follow all the guidelines on forge website.
 
-**Total time spent: 0.5 hours**
+**Total time spent: 0.6 hours**
 
 
