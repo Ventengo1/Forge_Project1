@@ -1,10 +1,11 @@
-Item,Component,Purpose
-Core Electronics,ESP32-CAM Board Bundle,Microcontroller + Camera + Wi-Fi
-Core Electronics,HX711 ADC Amplifier Module,Sensor to measure weight by translating analog pressure into digital signals
-Core Electronics,5kg Scale Load Cell Bar,Alluminum alloy bar to weigh up to 11 lbs of produce or like 5kg
-Core Electronics,0.96-inch I2C OLED Display,Screen to show real time feedback like weight and status
-Core Electronics,18650 Battery Expansion Shield,Provides cordless 5V power and handles onboard charging
-Prototyping & Connections,Male to Female & Female to Female Jumper Wires,Connects modules together so it all works
-Prototyping & Connections,Solderless Breadboard,For initial testing and layout mapping
-Mechanical Enclosure,Rigid Scale Base Plates (x2),Acrylic or wood sheets to sandwich the load cell
-Mechanical Enclosure,Overhead Mounting Arm/ Dowel/ pipe/ 3D print, to hold camera over the scale
+Item,Component,Purpose,Cost
+Core Electronics,ESP32-CAM Board Bundle,Microcontroller + 2MP Camera + Wi-Fi and USB programming backpack,$12.00
+Core Electronics,HX711 ADC Amplifier Module,Translates analog weight pressure into digital signals,$3.00
+Core Electronics,5kg Scale Load Cell Bar,Aluminum alloy strain gauge to weigh up to 11 lbs of produce,$6.00
+Core Electronics,0.96-inch I2C OLED Display,Screen to show real-time feedback like weight and status,$5.00
+Core Electronics,18650 Battery Expansion Shield,Provides cordless 5V power and handles onboard charging,$4.50
+Prototyping & Connections,M-F & F-F Jumper Wires,Connects modules together without custom PCB routing,$4.00
+Prototyping & Connections,Solderless Breadboard,For initial testing and layout mapping,$3.00
+Prototyping & Connections,FR4 Prototype Matrix Perfboard,For permanent soldering once the prototype works,$4.00
+Mechanical Enclosure,Rigid Scale Base Plates (x2),Acrylic or wood sheets to sandwich the load cell,$8.00
+Mechanical Enclosure,Overhead Mounting Arm,"Dowel, pipe, or 3D print to hold camera over the scale",$5.00
