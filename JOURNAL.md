@@ -67,6 +67,14 @@ Gotta go now and add the links to some.
 
 Just added links to them, so now it should follow all the guidelines on forge website.
 
+#### Spent a lot of time working through errors like this: We can make this file beautiful and searchable if this error is corrected: It looks like row 12 should actually have 5 columns, instead of 4 in line 11. But made it through
+
+
+Finsished BOM for now:
+
+<img width="940" height="373" alt="image" src="https://github.com/user-attachments/assets/9e07ed48-ee73-45c7-a526-f0034c5098aa" />
+
+
 **Total time spent: 0.6 hours**
 
 
