@@ -1,2 +1,10 @@
-Items   cost
-
+Item,Component,Purpose
+Core Electronics,ESP32-CAM Board Bundle,Microcontroller + Camera + Wi-Fi
+Core Electronics,HX711 ADC Amplifier Module,Sensor to measure weight by translating analog pressure into digital signals
+Core Electronics,5kg Scale Load Cell Bar,Alluminum alloy bar to weigh up to 11 lbs of produce or like 5kg
+Core Electronics,0.96-inch I2C OLED Display,Screen to show real time feedback like weight and status
+Core Electronics,18650 Battery Expansion Shield,Provides cordless 5V power and handles onboard charging
+Prototyping & Connections,Male to Female & Female to Female Jumper Wires,Connects modules together so it all works
+Prototyping & Connections,Solderless Breadboard,For initial testing and layout mapping
+Mechanical Enclosure,Rigid Scale Base Plates (x2),Acrylic or wood sheets to sandwich the load cell
+Mechanical Enclosure,Overhead Mounting Arm/ Dowel/ pipe/ 3D print, to hold camera over the scale
