@@ -56,3 +56,17 @@ Really 2 options for what I do:
 
 
 **Total time spent: 1.25 hours**
+
+# June 7th: Work to create BOM, find accurate prices for all items, and finalize my list
+
+My new bom is in this file: https://github.com/Ventengo1/Harvest-AI/blob/main/BOM.csv
+
+In it added all the items with my accurate approximate prices, prices my change and places I buy may but hopefully pretty close. 
+
+Gotta go now and add the links to some. 
+
+Just added links to them, so now it should follow all the guidelines on forge website.
+
+**Total time spent: 0.5 hours**
+
+
