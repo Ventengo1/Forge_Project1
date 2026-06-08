@@ -77,4 +77,57 @@ Finsished BOM for now:
 
 **Total time spent: 0.6 hours**
 
+# June 8th: Creating an online diagram/blueprint of the electronics all wired up and maybe even code it
+
+- Use wowki with ESP32 to try to build wiring map and blueprint
+- Added ESP32 as they don't have the cam but pretty close, Added SSD1306, added the weight sensor which had bar too
+
+<img width="1915" height="978" alt="image" src="https://github.com/user-attachments/assets/be2b534c-42a1-4b0f-bca5-75856dc9a3ef" />
+
+Now gonna wire it all up and figure all of this out before hand so that later I don't need to when I build it.
+
+1. Start off by wiring up the four OLED pins to the ESP32
+GND ──> ESP32 GND
+
+VCC ──> ESP32 3V3
+
+SCL ──> ESP32 14
+
+SDA ──> ESP32 15
+
+<img width="260" height="317" alt="image" src="https://github.com/user-attachments/assets/b7bd6cde-7955-4ff2-9107-cb6cef6f10ae" />
+
+2. Wire up the HX711 to ESP32
+
+ND ──> ESP32 GND
+
+VCC ──> ESP32 5V 
+
+DT (Data) ──> ESP32 D4 
+
+SCK (Clock) ──> ESP32 D2 
+
+<img width="391" height="306" alt="image" src="https://github.com/user-attachments/assets/743d807c-3e17-41a0-9fbe-84d1e05ce04c" />
+
+#### Now gonna add in libraries and some basic code
+
+Libaries:
+
+<img width="933" height="440" alt="image" src="https://github.com/user-attachments/assets/db7113ce-7668-4888-abfe-fec3ab5d5394" />
+
+Now I will write up some code and have it test to make sure everything is working. 
+<img width="930" height="397" alt="image" src="https://github.com/user-attachments/assets/32719ecf-e106-439d-955f-4694408b73c3" />
+
+The code will display the weight and initilaize everything and tell me any issues/errors if they arise.
+
+<img width="937" height="443" alt="image" src="https://github.com/user-attachments/assets/db7400da-1568-49b3-8a23-50c84dd6520e" />
+
+
+**Total time spent: 1.25 hours**
+
+
+
+
+
+
 
