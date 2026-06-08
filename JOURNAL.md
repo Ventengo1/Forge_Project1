@@ -122,6 +122,8 @@ The code will display the weight and initilaize everything and tell me any issue
 
 <img width="937" height="443" alt="image" src="https://github.com/user-attachments/assets/db7400da-1568-49b3-8a23-50c84dd6520e" />
 
+Link to full design: https://wokwi.com/projects/466259968212112385
+
 
 **Total time spent: 1.25 hours**
 
