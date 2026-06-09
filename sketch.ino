@@ -1,62 +1,85 @@
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
-#include "HX711.h"
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include "esp_camera.h"
 
-// OLED configuration
-#define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 64
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+const char* wifi_name = "YOUR_WIFI_NAME";
+const char* wifi_pass = "YOUR_WIFI_PASSWORD";
+const char* upload_url = "http://localhost:8080/upload-frame";
 
-// HX711 pins
-const int LOADCELL_DOUT_PIN = 4;
-const int LOADCELL_SCK_PIN = 2;
-HX711 scale;
+#define PWDN_GPIO_NUM     32
+#define RESET_GPIO_NUM    -1
+#define XCLK_GPIO_NUM      0
+#define SIOD_GPIO_NUM     26
+#define SIOC_GPIO_NUM     27
+#define Y9_GPIO_NUM       35
+#define Y8_GPIO_NUM       34
+#define Y7_GPIO_NUM       39
+#define Y6_GPIO_NUM       36
+#define Y5_GPIO_NUM       21
+#define Y4_GPIO_NUM       19
+#define Y3_GPIO_NUM       18
+#define Y2_GPIO_NUM        5
+#define VSYNC_GPIO_NUM    25
+#define HREF_GPIO_NUM     23
+#define PCLK_GPIO_NUM     22
 
 void setup() {
   Serial.begin(115200);
   
-  // Initialize I2C with custom pins for ESP32-CAM layout
-  Wire.begin(15, 14); 
+  camera_config_t config;
+  config.ledc_channel = LEDC_CHANNEL_0;
+  config.ledc_timer = LEDC_TIMER_0;
+  config.pin_d0 = Y2_GPIO_NUM;
+  config.pin_d1 = Y3_GPIO_NUM;
+  config.pin_d2 = Y4_GPIO_NUM;
+  config.pin_d3 = Y5_GPIO_NUM;
+  config.pin_d4 = Y6_GPIO_NUM;
+  config.pin_d5 = Y7_GPIO_NUM;
+  config.pin_d6 = Y8_GPIO_NUM;
+  config.pin_d7 = Y9_GPIO_NUM;
+  config.pin_xclk = XCLK_GPIO_NUM;
+  config.pin_pclk = PCLK_GPIO_NUM;
+  config.pin_vsync = VSYNC_GPIO_NUM;
+  config.pin_href = HREF_GPIO_NUM;
+  config.pin_sscb_nda = SIOD_GPIO_NUM;
+  config.pin_sscb_scl = SIOC_GPIO_NUM;
+  config.pin_pwdn = PWDN_GPIO_NUM;
+  config.pin_reset = RESET_GPIO_NUM;
+  config.xclk_freq_hz = 20000000;
+  config.pixel_format = PIXFORMAT_JPEG;
   
-  // Initialize OLED
-  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { 
-    Serial.println(F("OLED allocation failed"));
-    for(;;);
+  config.frame_size = FRAMESIZE_QVGA;
+  config.jpeg_quality = 12;
+  config.fb_count = 1;
+  
+  esp_err_t err = esp_camera_init(&config);
+  if (err != ESP_OK) {
+    Serial.println("Camera init failed");
+    return;
   }
-  
-  display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setCursor(0, 10);
-  display.println("Harvest AI Status:");
-  display.println("Initializing scale...");
-  display.display();
 
-  // Initialize Scale
-  scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
+  WiFi.begin(wifi_name, wifi_pass);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+  }
 }
 
 void loop() {
-  display.clearDisplay();
-  display.setCursor(0, 0);
-  display.setTextSize(1);
-  display.println("--- HARVEST AI ---");
-  
-  if (scale.is_ready()) {
-    long reading = scale.read();
-    display.setCursor(0, 25);
-    display.setTextSize(2);
-    display.print("Raw: ");
-    display.print(reading / 1000); // Simple downscale for testing display
+  if (WiFi.status() == WL_CONNECTED) {
+    camera_fb_t * fb = esp_camera_fb_get();
+    if (!fb) {
+      Serial.println("Frame capture failed");
+      return;
+    }
+
+    HTTPClient http;
+    http.begin(upload_url);
+    http.addHeader("Content-Type", "image/jpeg");
     
-    Serial.print("Raw Scale Reading: ");
-    Serial.println(reading);
-  } else {
-    display.setCursor(0, 25);
-    display.println("Scale error!");
+    int code = http.POST(fb->buf, fb->len);
+    http.end();
+    
+    esp_camera_fb_return(fb);
   }
-  
-  display.display();
-  delay(500);
+  delay(10000); 
 }
