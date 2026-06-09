@@ -160,9 +160,9 @@ In the sketch.ino file:
 
 <img width="952" height="464" alt="image" src="https://github.com/user-attachments/assets/86872af5-c6e8-4367-bbff-30cf31013e8f" />
 
-Overall took about 1.5 hrs with 45 min for dashboard and documention reasearch etc, 30 min for ino change, and like 15 ish min for the hack club ai stuff
+Overall took about 1.5 hrs with 50 min for dashboard and documention reasearch etc, 30 min for ino change, and like 15 ish min for the hack club ai stuff
 
-**Total time spent: 1.5 hours**
+**Total time spent: 1.6 hours**
 
 # June 6th, 2026: Setting up Supabase Database to store data so doesn't get erased
 
