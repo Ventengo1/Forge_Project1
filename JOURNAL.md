@@ -164,7 +164,7 @@ Overall took about 1.5 hrs with 50 min for dashboard and documention reasearch e
 
 **Total time spent: 1.6 hours**
 
-# June 6th, 2026: Setting up Supabase Database to store data so doesn't get erased
+# June 9th, 2026: Setting up Supabase Database to store data so doesn't get erased
 
 So decided to use supabase after doing reasearch to store data easily.
 
