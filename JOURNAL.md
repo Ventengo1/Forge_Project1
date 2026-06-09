@@ -164,6 +164,27 @@ Overall took about 1.5 hrs with 45 min for dashboard and documention reasearch e
 
 **Total time spent: 1.5 hours**
 
+# June 6th, 2026: Setting up Supabase Database to store data so doesn't get erased
+
+So decided to use supabase after doing reasearch to store data easily.
+
+So first started off by creating a supabase database that will be stored as close as possible.
+
+<img width="920" height="475" alt="image" src="https://github.com/user-attachments/assets/803aab3f-ce3b-4a1c-ab02-834e03cbff58" />
+
+Next went and created a table that works for me:
+<img width="959" height="419" alt="image" src="https://github.com/user-attachments/assets/0bb6b690-7a7b-44f6-9128-153b03af2990" />
+
+After this worked with AI to help me get the code and added it to my html file to help make it all work.
+
+Html file changes:
+
+- Added the Supabase browser library via CDN and replaced the local mock variables with a live connection that automatically reads and updates stats, charts, and history cards directly from cloud database
+
+- Added a new background function (saveHarvestToSupabase) that hooks directly into Hack Club AI loop, instantly saving the crop name, weight, and health analysis into permanent database rows every time an item is scanned
+
+**Total time spent: 1.25 hours**
+
 
 
 
