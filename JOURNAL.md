@@ -127,6 +127,45 @@ Link to full design: https://wokwi.com/projects/466259968212112385
 
 **Total time spent: 1.25 hours**
 
+# June 9th, 2026: Create and Code the online web dashboard which will display all the stats and more
+
+So decided to make this like a website which through the ESP32 Wifi module should work out.
+
+Gonna make it in html, css, and jss like a normal website so it both functions well and looks good.
+
+Decied to just use one of the free online compilers to make this easy.
+<img width="946" height="493" alt="image" src="https://github.com/user-attachments/assets/061d233e-198b-4198-81b0-fa0f5e86cc3b" />
+
+###### Disclaimer: Worked on code myself but used AI to help me out with it/make it better. 
+
+Basic html/css/js: <img width="407" height="406" alt="image" src="https://github.com/user-attachments/assets/fcfd0a6f-b984-48e3-9256-679b0591d668" />
+
+I was going to split into 3 seperate files but to keep it all easy gonna have in 1 html file.
+AI helped me out with this.
+
+ALso read documentation to make it work.
+
+Realized part of way through that the C++ code in sketch.ino would need to change too so changed that too. AI helped me out with this too, but I did good amount on own.
+
+Started off with placeholders and stuff but then changes to actaully check the real data every 2 seconds and use that.
+
+Added the key feature which is the image recongiton/functionality
+- With AI we added a hidden canvas to convert camera frames into Base64 text strings
+- I used Hack Club AI to connect with the api to actually see, indentify, and analyze the health and amount of food/produce
+
+In the sketch.ino file:
+- Added WiFI and Web Stacks so that ESP32 can talk to local network instead of just logging to a computer screen --> Key for full fucntionality and web dashboard
+- Added so that it turns on, congirues camera, and captures nice clean JPEG pic
+- Reworte main loop to automaically snap photo every 10 sec and stream over network
+
+<img width="952" height="464" alt="image" src="https://github.com/user-attachments/assets/86872af5-c6e8-4367-bbff-30cf31013e8f" />
+
+Overall took about 1.5 hrs with 45 min for dashboard and documention reasearch etc, 30 min for ino change, and like 15 ish min for the hack club ai stuff
+
+**Total time spent: 1.5 hours**
+
+
+
 
 
 
