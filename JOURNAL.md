@@ -185,6 +185,46 @@ Html file changes:
 
 **Total time spent: 1.25 hours**
 
+# June 11th, 2026: Setting up local node.js server
+
+So decieded to set up a local node.js server to bridge gap bewtween camera/hardware and my dashboard
+
+Heres what I did:
+
+# June 11th, 2026: Setting up a local Node server to handle camera uploads
+
+Decided to code a local backend server using Node.js to bridge the gap between the camera hardware and the dashboard before my physical parts get here
+
+<img width="461" height="448" alt="image" src="https://github.com/user-attachments/assets/b26945db-dc16-41e1-a14b-1aaa2945a780" />
+
+
+- Setup a new Node.js project environment and installed express and cors to manage network data (AI/web/googele overview helped me out with learning what to do)
+
+ <img width="452" height="274" alt="image" src="https://github.com/user-attachments/assets/cc0310fb-99ac-4b04-95f5-2e881d485c3f" />
+ 
+- Used express to listen on port 8080 so the hardware has a place to send data over my home network
+  
+- Configured body-parser to accept raw binary images so it can process JPEG photo data from the ESP32 camera without crashing
+  
+- Programmed an automatic folder creation script to safely hold onto incoming snapshots on my computer
+  
+- Added a file cleanup system that auto deletes the last image whenever a new one comes in so my hard drive doesn't fill up with random frames
+  
+- Built a POST endpoint  so the ESP32-CAM can upload frames wirelessly
+  
+- Created a GET endpoint so my html dashboard page can grab the latest picture and render it seamlessly
+
+  Code file made in VS Code called server.js:
+
+  <img width="958" height="599" alt="image" src="https://github.com/user-attachments/assets/452710b3-2c2d-44f5-95aa-4ddf049cd99b" />
+
+<img width="460" height="509" alt="image" src="https://github.com/user-attachments/assets/d93280f2-bb4d-45f1-98cd-fd9e3a15db70" />
+
+
+
+**Total time spent: 1 hour**
+
+
 
 
 
