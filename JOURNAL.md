@@ -294,6 +294,30 @@ Yes it worked!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # June 11th, 2026: Test out Dashboard UI with the server locally
 
+First need to start the backend server again which I worked on earlier today and got working.
+
+<img width="659" height="227" alt="image" src="https://github.com/user-attachments/assets/deb79489-d75f-46bc-b2dd-9c1674908e73" />
+
+Now that it's running, gonna in the harvest local folder for project, create the html file to test for the dashboard.
+
+<img width="956" height="551" alt="image" src="https://github.com/user-attachments/assets/8cb3559a-1689-4ee7-bbf7-1f0ec52a9f22" />
+
+Created simple code with a bit of help from AI to just test and make sure everythign works in this new folder for the dashboard I made.
+
+Now testing it with the image and got frame committed which means no more errors!!!
+
+<img width="865" height="140" alt="image" src="https://github.com/user-attachments/assets/90ea6f1c-7b0d-43dc-ae83-c0c71f4b0ecb" />
+
+Was able to get dashboard simpel html that I coded with this so I can confirm now that it should work with the full code and everything:
+
+<img width="950" height="497" alt="image" src="https://github.com/user-attachments/assets/3c298761-0588-4126-99b3-1f714d0b9d89" />
+
+Next probably gonna work on like the design for the physcial parts and everything else seems set.
+
+**Total time spent: 0.6 hour**
+
+
+
 
 
 
