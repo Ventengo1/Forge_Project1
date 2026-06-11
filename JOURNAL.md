@@ -221,6 +221,83 @@ Decided to code a local backend server using Node.js to bridge the gap between t
 **Total time spent: 1 hour**
 
 
+# June 11th, 2026: Testing out server I just made
+
+So now I want to test out the server with a image or something
+
+First gonna start off by testing the POST upload endpoint:
+<img width="453" height="229" alt="image" src="https://github.com/user-attachments/assets/ff3ecc15-dabb-4c95-b033-49f16fa321e6" />
+
+First to make all of this work had to convert and image from png to jpg and put into folder:
+<img width="458" height="530" alt="image" src="https://github.com/user-attachments/assets/5e603c3f-002c-420b-8966-90e5cfa4bc0d" />
+
+Gonna use AI to help me deug this issue:
+
+<img width="458" height="481" alt="image" src="https://github.com/user-attachments/assets/de2f23c3-30d8-41c3-8eb0-e173ecb26d6b" />
+
+Now gettign this error:
+
+Invoke-WebRequest : Cannot bind parameter 'Headers'. Cannot
+convert the "Content-Type: image/jpeg" value of type
+"System.String" to type "System.Collections.IDictionary".
+At line:1 char:17
++ curl -X POST -H "Content-Type: image/jpeg" --data-binary
+"@test.jpg"  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-We
+   bRequest], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,
+   Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+
+
+IDK what's causing it but will figure it out.
+
+It seems I may need to try bypass curl on windows as its acting up.
+
+Been spending about 25 min and still getting issues. Gotta work through it though.
+
+Finally got this:
+
+PS C:\Users\ojas\harvest-ai-backend> curl.exe -X POST -H "Content-Type: image/jpeg" --data-binary "test.jpg" http://localhost:8080/upload-frame
+Frame committed.
+PS C:\Users\ojas\harvest-ai-backend>
+
+
+Frame comitted! ---> Yay it worked
+
+So now tried to open up the localhost web page for image to show up but not working.
+
+An image icon is there but the actual image is not shown.
+
+It seems there is another broken image.
+
+Gonna try to redo the steps in a new terminal window.
+
+Now back to getting issues like this:
+
+<img width="464" height="230" alt="image" src="https://github.com/user-attachments/assets/7f3882ed-1cb1-4b5d-8e16-cd6e50af1e8a" />
+
+Realized the file was test.jpg.jpg!!!!! NO!!!!
+
+Found using this: <img width="446" height="208" alt="image" src="https://github.com/user-attachments/assets/5554fe62-53ec-432a-aa05-54421a96daa3" />
+
+
+It will work now!!!
+
+
+Yes it worked!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+<img width="949" height="487" alt="image" src="https://github.com/user-attachments/assets/3f2294b8-15eb-426e-80ab-76bfac57774c" />\
+
+**Total time spent: 1.5 hour**
+
+
+
+
+
+
+
+
 
 
 
