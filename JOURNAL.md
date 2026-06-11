@@ -292,6 +292,11 @@ Yes it worked!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **Total time spent: 1.5 hour**
 
 
+# June 11th, 2026: Test out Dashboard UI with the server locally
+
+
+
+
 
 
 
