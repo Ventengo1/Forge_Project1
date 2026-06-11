@@ -185,11 +185,7 @@ Html file changes:
 
 **Total time spent: 1.25 hours**
 
-# June 11th, 2026: Setting up local node.js server
 
-So decieded to set up a local node.js server to bridge gap bewtween camera/hardware and my dashboard
-
-Heres what I did:
 
 # June 11th, 2026: Setting up a local Node server to handle camera uploads
 
