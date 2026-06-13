@@ -316,6 +316,80 @@ Next probably gonna work on like the design for the physcial parts and everythin
 
 **Total time spent: 0.6 hour**
 
+# June 13th, 2026: Connect Supabase I made to the local sever
+
+So I'm gonna using the official library for the supabase connect it to the server:
+
+
+npm install @supabase/supabase-js --->Command used
+
+
+<img width="803" height="383" alt="image" src="https://github.com/user-attachments/assets/5616cefc-a84a-4f3b-a3c2-604f186c6845" />
+
+So current supabase is this:
+
+<img width="956" height="505" alt="image" src="https://github.com/user-attachments/assets/924cd7c1-b013-4ef2-ae58-d3c7f40d4c6b" />
+
+Gonna use it for our actual project and test it.
+
+Got the API credentials from supabase which will then allow me to connect from code/server.
+
+In the local server.js code, added this code which then will be filled with actual keys, can't actualy show keys for obvious reasons:
+
+
+<img width="941" height="473" alt="image" src="https://github.com/user-attachments/assets/e39a609f-e6d3-491c-abaf-171bf701e713" />
+
+Then turned server back on and its all working!!!
+
+Now gonna try to test it:
+
+To test, changed my local js (server.js) file to have this and connect to supabase:
+
+
+<img width="842" height="475" alt="image" src="https://github.com/user-attachments/assets/74660c26-715a-4bf4-b7df-bfacf54aab81" />
+
+So working on the test and getting this error:
+
+end> curl.exe -X POST -H "Content-Type: image/jpeg" -H "x-weight-grams: 45.2" -H "x-crop-type: basil" --data-binary @test.jpg http://localhost:8080/upload-frame
+At line:1 char:112
++ ... ight-grams: 45.2" -H "x-crop-type: basil" --data-binary @test.jpg htt ...
++                                                             ~~~~~
+The splatting operator '@' cannot be used to reference variables in an expression. '@test' can be used only as an
+argument to a command. To reference variables in an expression use '$test'.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : SplattingNotPermitted
+
+###### Trying to still work throguh it!
+
+Working through it and realized had some duplicate lines, fixing it now.
+
+Finally got this:\
+\
+C:\Users\ojas\harvest-ai-backend>node server.js
+=================================================
+   HARVEST AI BACKEND RUNNING ON PORT 8080
+=================================================
+
+Yay!!!
+
+Now tried but got an error, looks like sql and databse didn't match up, maybe RLS errors. Fixed it though.
+
+yay it worked now:
+
+<img width="695" height="385" alt="image" src="https://github.com/user-attachments/assets/1d062492-e7f4-4265-bf19-61686c3553a6" />
+
+Working on testing the dashboard now, want it to show weight and metrics as test btu not working yet. Still only see image from before.
+
+Gonna come back to this later.
+
+**Total time spent: 1 hour**
+
+
+
+
+
+
+
 
 
 
