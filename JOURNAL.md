@@ -384,6 +384,25 @@ Gonna come back to this later.
 
 **Total time spent: 1 hour**
 
+# June 14th, 2026: Add all needed code files to repo and tidy up andy software stuff
+
+So gonna add the server.js code file to the repo and just fix any things in the,
+
+So started off by going through all and making sure any api keys or stuff like that wasn't there
+Doing this so I stay protected.
+
+Next, I with a tiny bit of help from AI, went through, cleaned up server.js and added to the repo.
+
+Ok so went through and made sure the server.js worked by testing what I added.
+
+Now going through and trying to finalzie the html code.
+<img width="1893" height="973" alt="image" src="https://github.com/user-attachments/assets/edbbfac0-bfa3-4e69-a71f-7b64c0ddcf5b" />
+
+Finally, added the sketch,ino code for final time.
+
+Quick discalimer that AI did in part assist me in making the code but I really tried to do a lot of it on my own.
+
+**Total time spent: 0.75 hours**
 
 
 
