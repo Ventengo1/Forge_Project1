@@ -404,6 +404,23 @@ Quick discalimer that AI did in part assist me in making the code but I really t
 
 **Total time spent: 0.75 hours**
 
+# June 14th, 2026: Add in the sql script I used and the package.json stuff with the stuff to install
+
+So added the package.json file also to the code folder
+This will then tell people which packages to install like how I installed them. I am pretty sure this is all but I will double check later then.
+
+TO make it just kinda looked up some examples and then went with it.
+
+Then after I went to my supabase, copied the sql script I used to make the tables, and I put that into github.
+<img width="836" height="415" alt="image" src="https://github.com/user-attachments/assets/5cd0f531-8d40-4e5e-ae32-0a2c97f015ed" />
+
+Now have these 5 files in the code and I think that the software part of this project is now fully down:
+<img width="953" height="449" alt="image" src="https://github.com/user-attachments/assets/82c0ea59-96c9-413e-8911-348b2bb9a0af" />
+
+**Total time spent: 0.5 hours**
+
+
+
 
 
 
