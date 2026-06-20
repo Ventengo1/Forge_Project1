@@ -433,6 +433,67 @@ I also then realized that I needed to put CAD files or hardware files in there s
 
 **Total time spent: 0.4 hours**
 
+# June 20th, 2026: Build CAD Arm
+
+So decided to use tinkercad as that is the only CAD software I really know how to use:
+
+<img width="1902" height="1071" alt="image" src="https://github.com/user-attachments/assets/411f7a02-9fa0-4223-9686-8222eb00e001" />
+
+
+So started off by adding a 15x15x150 tall vertical piece which will help get the camera above.
+
+Then added a diagnol bar to get the camera both a bit higher but also more over the center of what will be the scale.
+
+<img width="359" height="323" alt="image" src="https://github.com/user-attachments/assets/0f9785ea-d9b8-4b05-ae22-c7817eb7f6bc" />
+
+Still trying to merge them perfectly but gettting closer
+
+yay, finally got them all merged together nicley:
+<img width="251" height="291" alt="image" src="https://github.com/user-attachments/assets/959f1f72-31c6-409d-8e29-b620e49a8a30" />
+
+Now gonna add this piece as the camera mount: <img width="383" height="310" alt="image" src="https://github.com/user-attachments/assets/00495969-4e3a-430d-9024-1bf102f1ed7d" />
+
+So added the piece now but now gonna add some supports to it:
+
+<img width="434" height="249" alt="image" src="https://github.com/user-attachments/assets/5689011a-f6ea-4821-9cdd-4195db7d3526" />
+
+got to adding this supprot plate with should work out well:
+<img width="266" height="258" alt="image" src="https://github.com/user-attachments/assets/239d9cfc-160b-46ce-a54d-e1f594343dc3" />
+
+
+Then went ahead and deleted some of useless shape from support to clean up and reduce filament needed.
+
+
+Now added another square 60x60 base to do wo things:
+
+1. It counteracts the weight of the arm
+2. It provides a sturdy base and looks nicer and helps with the scale then
+
+Okay, so was thinking through it and I think I should attach the camera unit to the top and then drill a whole which the lens could look through.
+
+I think it should be like 12x12ish.
+
+<img width="428" height="250" alt="image" src="https://github.com/user-attachments/assets/de76d316-d9cf-4047-a6a9-8300bb6881f4" />
+
+
+So now this looks to be the final result which should turn out pretty good once printed
+<img width="332" height="236" alt="image" src="https://github.com/user-attachments/assets/b676b3d3-9cf1-4a40-897d-629031e196c3" />
+
+Now gonna go through, double check everything, and spend some time just going through rest of project.
+I think I am ready to submit though...
+
+**Total time spent: 1.25 hours**
+
+
+
+
+
+
+
+
+
+
+
 
 
 
