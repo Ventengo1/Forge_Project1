@@ -16,3 +16,6 @@ Heres a overview of the system:
 3. Frontend Dashboard (HTML + Tailwind + Chart.js): Pulls live entries straight from Supabase to automatically draw visual history timelines and update the yield analytics counters
 
 
+  Bill of Materials (BOM)CategoryItemPurposeCostLinkCore ElectronicsESP32-CAM Board BundleMicrocontroller + Camera + Wi-Fi$15.00AmazonCore ElectronicsHX711 ADC Amplifier ModuleTranslates analog weight pressure into digital signals$6.00AmazonCore Electronics5kg Scale Load Cell BarAluminum alloy to weigh up to 11 lbs of produce$8.00AmazonCore Electronics0.96-inch I2C OLED DisplayScreen to show real-time feedback like weight and status$6.00AmazonCore Electronics18650 Battery Expansion ShieldProvides cordless 5V power and handles onboard charging$7.50AmazonPrototyping & ConnectionsM-F & F-F Jumper WiresConnects modules together and makes everything work$5.00Local / On HandPrototyping & ConnectionsSolderless BreadboardFor initial testing and layout mapping$4.00Local / On HandMechanical EnclosureRigid Scale Base Plates (x2)Acrylic or wood sheets to sandwich the load cell$8.00AmazonMechanical EnclosureOverhead Mounting SupportWood dowel, pipe, or 3D print to hold camera over scale$4.00Local / DIYTotal Project Cost$64.50 
+
+
