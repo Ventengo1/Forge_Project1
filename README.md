@@ -16,6 +16,21 @@ Heres a overview of the system:
 3. Frontend Dashboard (HTML + Tailwind + Chart.js): Pulls live entries straight from Supabase to automatically draw visual history timelines and update the yield analytics counters
 
 
-  Bill of Materials (BOM)CategoryItemPurposeCostLinkCore ElectronicsESP32-CAM Board BundleMicrocontroller + Camera + Wi-Fi$15.00AmazonCore ElectronicsHX711 ADC Amplifier ModuleTranslates analog weight pressure into digital signals$6.00AmazonCore Electronics5kg Scale Load Cell BarAluminum alloy to weigh up to 11 lbs of produce$8.00AmazonCore Electronics0.96-inch I2C OLED DisplayScreen to show real-time feedback like weight and status$6.00AmazonCore Electronics18650 Battery Expansion ShieldProvides cordless 5V power and handles onboard charging$7.50AmazonPrototyping & ConnectionsM-F & F-F Jumper WiresConnects modules together and makes everything work$5.00Local / On HandPrototyping & ConnectionsSolderless BreadboardFor initial testing and layout mapping$4.00Local / On HandMechanical EnclosureRigid Scale Base Plates (x2)Acrylic or wood sheets to sandwich the load cell$8.00AmazonMechanical EnclosureOverhead Mounting SupportWood dowel, pipe, or 3D print to hold camera over scale$4.00Local / DIYTotal Project Cost$64.50 
+Gemini had to help me with the BOM in the readme below, I didn't know how to put it there.
+
+## Bill of Materials (BOM)
+
+| Item | Component | Purpose | Cost | Links |
+| --- | --- | --- | --- | --- |
+| **Core Electronics** | ESP32-CAM Board Bundle | Microcontroller + Camera + Wi-Fi | $15.00 | [Amazon](https://www.amazon.com/dp/B0CJJHXD1W) |
+| **Core Electronics** | HX711 ADC Amplifier Module | Translates analog weight pressure into digital signals | $6.00 | [Amazon](https://www.amazon.com/dp/B010FG9RXO) |
+| **Core Electronics** | 5kg Scale Load Cell Bar | Aluminum alloy to weigh up to 11 lbs of produce | $8.00 | [Amazon](https://www.amazon.com/dp/B010FG9RXO) |
+| **Core Electronics** | 0.96-inch I2C OLED Display | Screen to show real-time feedback like weight and status | $6.00 | [Amazon](https://www.amazon.com/dp/B072Q2X2LL) |
+| **Core Electronics** | 18650 Battery Expansion Shield | Provides cordless 5V power and handles onboard charging | $7.50 | [Amazon](https://www.amazon.com/dp/B07K7GZ2RK) |
+| **Prototyping & Connections** | M-F & F-F Jumper Wires | Connects modules together and makes everything work | $5.00 | *Local / On Hand* |
+| **Prototyping & Connections** | Solderless Breadboard | For initial testing and layout mapping | $4.00 | *Local / On Hand* |
+| **Mechanical Enclosure** | Rigid Scale Base Plates (x2) | Acrylic or wood sheets to sandwich the load cell | $8.00 | [Amazon](https://www.amazon.com/dp/B0D5QCC74J) |
+| **Mechanical Enclosure** | Overhead Mounting Support | Wood dowel, pipe, or 3D print to hold camera over scale | $4.00 | *Local / DIY* |
+|  |  | **Total Project Cost** | **$64.50** |  |
 
 
