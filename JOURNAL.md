@@ -419,6 +419,20 @@ Now have these 5 files in the code and I think that the software part of this pr
 
 **Total time spent: 0.5 hours**
 
+# June 20th, 2026: Work on README and go through the submission AI check
+
+So worked on the readme file and made descritpion of project better
+Also added a overview of the 3 key parts/systems of it
+And then added the BOM as the AI autocheck said to
+
+Making the BOM in the readme I did not know how to do so I had gemini take my current BOM and give me it in a way I could put into the readme file:
+<img width="726" height="664" alt="image" src="https://github.com/user-attachments/assets/05589219-8436-4aff-9f47-d0538bc73706" />
+
+
+I also then realized that I needed to put CAD files or hardware files in there so I am going to work to design the arm in tinkercad (I don't know any other cad sadly!!!)
+
+**Total time spent: 0.4 hours**
+
 
 
 
